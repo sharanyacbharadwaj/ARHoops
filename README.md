@@ -14,7 +14,7 @@ Grab the latest APK from the [Releases](../../releases) page and install it on a
 
 ## Source Code
 
-The source code is kept private. It's available on request for recruiters and interviewers.
+The source code is kept private. It's available on request.
 
 ## Features
 
