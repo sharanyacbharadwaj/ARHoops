@@ -12,6 +12,10 @@ Grab the latest APK from the [Releases](../../releases) page and install it on a
 2. Open it and allow installing from this source when asked.
 3. Launch ARHoops, allow camera access, and point your phone at the floor.
 
+## Source Code
+
+The source code is kept private. It's available on request for recruiters and interviewers.
+
 ## Features
 
 ### Gameplay
@@ -36,13 +40,13 @@ Grab the latest APK from the [Releases](../../releases) page and install it on a
 
 ## How It Works
 
-**Placing the hoop.** Screen taps are raycast against ARCore's detected planes, and the hoop is placed at the hit point, turned to face the player. Taps and swipes are told apart by finger movement, and button presses are filtered out so they never move the hoop.
+**Placing the hoop:** Screen taps are raycast against ARCore's detected planes, and the hoop is placed at the hit point, turned to face the player. Taps and swipes are told apart by finger movement, and button presses are filtered out so they never move the hoop.
 
-**Shooting.** For each shot, the game measures the distance to the rim and solves the projectile equations for a throw that peaks above the rim and drops through its centre, with higher arcs for longer shots. The swipe length is compared to an ideal swipe for that distance. Inside the sweet spot, the ball follows the solved path; outside it, the ball falls short or overshoots. The sweet spot narrows with distance, so 3-pointers are harder.
+**Shooting:** For each shot, the game measures the distance to the rim and solves the projectile equations for a throw that peaks above the rim and drops through its centre, with higher arcs for longer shots. The swipe length is compared to an ideal swipe for that distance. Inside the sweet spot, the ball follows the solved path; outside it, the ball falls short or overshoots. The sweet spot narrows with distance, so 3-pointers are harder.
 
-**Scoring.** A trigger zone tracks each ball's centre around the rim. A basket counts only if the ball enters from above inside the scoring circle and drops below the rim while still inside and falling. Bounce-outs, air balls and balls coming up from below don't count.
+**Scoring:** A trigger zone tracks each ball's centre around the rim. A basket counts only if the ball enters from above inside the scoring circle and drops below the rim while still inside and falling. Bounce-outs, air balls and balls coming up from below don't count.
 
-**Game flow.** A small state machine (waiting for hoop, menu, challenge, free shoot, game over) controls the UI, shooting, scoring and whether the hoop can be moved.
+**Game flow:** A small state machine (waiting for hoop, menu, challenge, free shoot, game over) controls the UI, shooting, scoring and whether the hoop can be moved.
 
 ## Controls
 
@@ -60,10 +64,6 @@ Grab the latest APK from the [Releases](../../releases) page and install it on a
 - Unity Input System
 - TextMeshPro
 - Blender
-
-## Source Code
-
-The source code is kept private. It's available on request for recruiters and interviewers.
 
 ## Credits
 
